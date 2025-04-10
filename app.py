@@ -58,6 +58,7 @@ def lambda_handler(event, context):
 
             cursor.execute(f"CREATE DATABASE IF NOT EXISTS {new_db_name};")
             cursor.execute(f"USE {new_db_name};")
+            cursor.execute(f"USE {new_db_name};")
 
             # Create a new table
             create_table_sql = f"""
