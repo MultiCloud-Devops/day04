@@ -29,7 +29,7 @@ def connect_to_rds():
     secret = get_secret()
     print(secret)
     if not secret:
-        raise ValueError("Failed to retrieve database secrets error message.")
+        raise ValueError("Failed to retrieve database secrets error-message.")
 
     db_host = secret['host']
     db_user = secret['username']
